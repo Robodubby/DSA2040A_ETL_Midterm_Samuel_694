@@ -26,4 +26,5 @@ This ETL project extracts, transforms, and loads order data from CSV files into 
 
 ## Screenshot
 
-See screenshot in `/screenshots/` folder.
+![Data preview](screenshot1.png)
+![Data preview](screenshot2.png)
