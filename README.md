@@ -24,7 +24,14 @@ This ETL project extracts, transforms, and loads order data from CSV files into 
 2. Run notebooks in order: `etl_extract.ipynb` → `etl_transform.ipynb` → `etl_load.ipynb`.
 3. Check outputs in `/transformed/` and `/loaded/`.
 
+## Lab 5 Schema Info
+
+For the load step, I used `pandas.to_sql()` to write both datasets into SQLite databases. This function automatically creates the table structure based on the columns in the DataFrame.
+
+The result is basically the same as the schema shown in the instructions with fields like customer_name, product, quantity, unit_price, total_price, and order_date. Both `full_data.db` and `incremental_data.db` follow this format.
+
 ## Screenshot
 
 ![Data preview](screenshot1.png)
 ![Data preview](screenshot2.png)
+
